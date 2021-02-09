@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag</title>
+</head>
+<body>
+    <h1>특강 신청</h1>
+    <form>
+        <fieldset id = "subject">
+            <legend>수강과목</legend>
+            <ul>
+                <li>
+                    <label class = "reg" for = "subj">영어회화</label>
+                    <input type = "text" id = "subj" name = "time"  value =  "오전 9:00 ~ 11:00" readonly>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <label class = "reg" for = "subno">학번</label>
+                    <input type = "text" id = "subno" name = "studentNumber" placeholder="990215" maxlength="8" required>
+                </li>
+            </ul>
+        </fieldset><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

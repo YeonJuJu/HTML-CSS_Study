@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table > tbody > tr > th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table > thead{
+            background-color: cornflowerblue;
+        }
+        table > tbody{
+            background-color: lightpink;
+        }
+        table > tfoot{
+            background-color: lightslategrey;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>소요경비내역</th>
+                <th>금 액</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>식 대</td>
+                <td>56000</td>
+            </tr>
+
+            <tr>
+                <td>교통비</td>
+                <td>38000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>합 계</td>
+                <td>94000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
