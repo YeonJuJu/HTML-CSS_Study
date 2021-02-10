@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header > h1{ /* header 밑 직계 자식인 h1 */
+            background-color: papayawhip;
+            color: rgb(218, 163, 76);
+        }
+        #section h1{ /* header 밑 모든 h1 */
+            background-color: pink;
+            color: rgb(196, 67, 89);
+        }
+        h1, h2{ /* 자손 후손 관계없이 모든 h1, h2*/
+            background-color: rgb(240, 210, 240);
+        }
+    </style>
+</head>
+<body>
+    <div id = "header">
+        <h1 class = "title">자손선택자, 후손선택자</h1>
+        <h2>선택자 테스트</h2>
+        <div id = "nav">
+            <h1>navigation</h1>
+        </div>
+    </div>
+
+    <div id = "section">
+        <h1 class = "title">Exercitation cillum laboris magna qui culpa duis quis id sit pariatur.</h1>
+        <p>Magna labore sint veniam ex. Ut proident eu consequat in ea enim eiusmod. Laborum commodo aliqua laboris fugiat deserunt. Commodo amet anim ad sint magna aute.</p>
+        <div>
+            <h1>hihi</h1>
+            <h2>hellohello</h2>
+        </div>
+    </div>
+</body>
+</html>

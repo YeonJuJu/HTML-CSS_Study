@@ -1,0 +1,44 @@
+body{
+    margin : 0;
+    /* font-size: 2em; */
+} 
+h1, p{
+    margin: 0;
+}
+.container{
+    background-color:rgb(200, 243, 229);
+}
+.container::after{
+    content:'';
+    display: block;
+    clear: both;
+    height:0;
+    visibility: hidden;
+}
+.item{
+    float: left;
+    padding: 5%;
+}
+.item_1{
+    background-color: rgb(224, 207, 185);
+}
+.item_2{
+    background-color: rgb(200, 240, 241);
+}
+/* 미디어 쿼리 */
+@media screen and (min-width:700px){ /* 700px 이상 */
+    .container{
+        font-size: 0;
+    }
+    .item{
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .item_1{
+        width: 30%;
+    }
+    .item_2{
+        width: 30%;
+    }
+}

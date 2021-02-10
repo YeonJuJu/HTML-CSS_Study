@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test a{
+            text-decoration: none;
+        }
+        .test li{
+            list-style: none;
+            float: left;
+        }
+        .test li::after{
+            content:" | ";
+            padding-right: 10px; /* top -> right -> bottom -> left */
+        }
+        .test li:last-child::after{
+            content: "";
+        }
+        ul li:first-child{
+            font-weight: bold;
+        }
+        ul li::first-letter{
+            font-size: 3em;
+            color:teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상 요소 (Pseudo Element)</h1>
+    <p>가상 요소는 선택자에 추가되어 실제로는 없지만, <br>
+       있는 것처럼 나타내주는 역할을 함
+    </p>
+    
+    <p>::first-line Element의 text에서 첫 줄에 스타일 적용</p>
+    <p>::first-letter Element의 text에서 첫 번째 글자에 스타일 적용</p>
+    <p>::after Element의 content 끝 부분에 생성된 content 추가</p>
+    <p>::before Element의 content 시작 부분에 생성된 content 추가</p>
+    <p>::selection Element의 text에서 드래그된 영역의 속성 변경</p>
+    <p>::placeholder input tag 의 hint text에 스타일 적용</p>
+
+    <ul>
+        <li>임 : 임진왜란</li>
+        <li>정 : 정유재란</li>
+        <li>동 : 동학혁명</li>
+        <li>갑 : 갑신정변</li>
+    </ul>
+
+    <div id = "content">
+        <ul class = "test">
+            <li><a href="">login</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">sitemap</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color:midnightblue;
+            font-style: italic;
+        }
+        a[href ^= "#"]{
+            background-color: rgb(128, 179, 153);
+        }
+        a[href *= "www"]{
+            background-color: rgb(202, 202, 250);
+        }
+        a[href *= "string"]{
+            color: rgb(255, 255, 255);
+        }
+        a[href $= "google"]{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#attribute">Attribute</a></li>
+        <li><a href="https://www.naver.com/">Naver</a></li>
+        <li><a href="#string_attribute">String Attribute Selector</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+    </ul>
+</body>
+</html>

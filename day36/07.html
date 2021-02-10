@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[href]{
+            background-color: lightgrey;
+        }
+        h1[title]{
+            color: lightseagreen;
+        }
+        pre[title="mango"]{
+            color: lightskyblue;
+            font-weight: bold;
+        }
+        p[title*="tjoeun"]{ /* *= 는 포함 */
+            font-family: 'Courier New', Courier, monospace;
+            color:blue;
+        }
+        p[title ~= "tjoeun1"]{ /* ~= 는 일치 */
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:red;
+        }
+        p[title |= "tjoeun1"]{ /* 접두어 :  언더라인 하이픈 적용 안됨*/
+            background-color: palegreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank">Google</a>
+
+    <h1 title = "fruit">속성명 선택자</h1>
+    <p title = "strawberry">속성명 선택자는 태그처럼 선택자로 사용함</p>
+    <pre title = "mango">속성명이 일치해도 태그가 일치하지 않으면 선택되지 않음</pre>
+
+    <p title = "independent">독립된 단어에 적용됨</p>
+    <p title = "tjoeun1-string">하이픈<code class = "inlinecode">-</code>에도 적용됨</p>
+    <p title = "string_tjoeun1">언더바<code class = "inlinecode">_</code>에도 적용됨</p>
+    <p title = "tjoeun1-string">하이픈<code class = "inlinecode">-</code>에도 적용됨</p>
+    <p title = "string_tjoeun1">언더바<code class = "inlinecode">_</code>에도 적용됨</p>
+    <p title = "string tjoeun1">공백으로 연결된 합성어</p>
+</body>
+</html>

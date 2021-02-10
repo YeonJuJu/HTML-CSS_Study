@@ -1,0 +1,19 @@
+body{
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+}
+div{
+    display: block; /* block 은 한 줄을 다 차지 */
+    width: 300px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+span{
+    display: inline; /* inline 은 width, height 가 적용이 안됨 */
+    /* inline 이면서 width, height 를 적용하고 싶으면 위 속성을 inline-block 속성으로 바꿔준다 */
+    background-color: aquamarine;
+}
+/* display = none 이면 보이지 않는다 
+   display 속성 => block, inline, inline-block, none */

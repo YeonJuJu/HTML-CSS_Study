@@ -1,0 +1,33 @@
+body{
+    margin : 0;
+    font-size: 2em;
+}
+h1, p{
+    margin: 0;
+}
+.container{
+    background-color:rgb(200, 243, 229);
+}
+.container::after{
+    content:'';
+    display: block;
+    clear: both;
+    height:0;
+    visibility: hidden;
+}
+.item{
+    float: left;
+    padding: 5%;
+}
+.item_1{
+    width: 30%;
+    background-color: rgb(224, 207, 185);
+}
+.item_2{
+    width: 50%;
+    background-color: rgb(200, 240, 241);
+}
+footer{
+    clear : both;
+    background-color: rgb(208, 188, 219);
+}
