@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding : 100px;
+        }
+        .parent{
+            width : 500px;
+            height : 300px;
+            /*
+                margin, padding
+                : 상하 좌우
+                : 상 좌우 하
+                : 상 우 하 좌 (시계방향)
+            */
+            margin : 0 auto;
+            background-color: khaki;
+            position : relative;
+            
+        }
+        .child{
+            width : 100px;
+            height : 100px;
+            font-weight: bold;
+            position : absolute;
+        }
+        .a {
+            background-color: lawngreen;
+            /* 부모 기준으로 자리 잡음 */
+            left : -150px;
+            top : 100px;
+        }
+        .b {
+            background-color: lightblue;
+            /* 부모 기준으로 자리 잡음 */
+            left : 200px;
+            top : 100px;
+        }
+        .c {
+            background-color: lightcoral;
+            /* 부모 기준으로 자리 잡음 */
+            right : -150px;
+            top : 100px;
+            /* position : fixed;
+            bottom : 0;
+            right : 0; */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        position : static, relative, absolute, fixed
+
+        static : 기본값 - default
+        relative: relative 속성으로 설정하기 전 (static 상태) 를 기준으로 함
+        absolute: 부모요소를 기준으로 함 - 기본 부모는 browser
+                  browser가 아닌 다른 element를 부모로 하려면 
+                  일반적으로 부모 element를 relative 해야 함
+                  다른 element를 기준으로 절댓값 위치를 가짐
+        fixed: 보이는 화면을 기준으로 함
+
+        위치 지정 방법
+        => 가까운 쪽부터의 위치가 지정됨
+           left, right, top, bottom 기준으로 설정
+           (margin 으로 세부 조정함)
+
+        margin : 이 속성은 뒤에 있는 요소들이 영향을 받음
+
+        absolute
+        -> content 만큼의 크기가 자동으로 설정 됨
+           (실제 browser 화면에서 떠있음)
+           기준으로부터 left, top, right, bottom에 설정한 만큼 위치함
+           : absolute 로 설정한 element 의 부모가 되려면 
+             position을 기본 값(static)이 아닌 것으로 설정해야 함
+
+        relative
+        -> static 인 상태를 기준으로 자리를 잡음
+           (실제 browser 화면에서 떠있음)
+    -->
+    <div class = "parent">
+        <div class = "child a">child a</div>
+        <div class = "child b">child b</div>
+        <div class = "child c">child c</div>
+    </div>
+
+    <p>Do elit officia excepteur ullamco commodo enim. Elit irure voluptate nisi laborum. Ullamco culpa sint magna est.</p>
+</body>
+</html>

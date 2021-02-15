@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li a{
+            background-image: url("img/actor_.png");
+            width: 108px;
+            height: 32px;
+            display: block;
+            text-indent: -100em;
+        }
+        li:nth-child(2) a{/*Movie*/
+            background-position: -108px 0; /* x, y 좌표 */
+        }
+        li:nth-child(3) a{/*Issue*/
+            background-position: -214px 0; /* x, y 좌표 */
+        }
+        li:first-child a:hover{/*Actor*/
+            background-position: 0 -32px; /* x, y 좌표 */
+        }
+        li:nth-child(2) a:hover{/*Movie*/
+            background-position: -107px -32px; /* x, y 좌표 */
+        }
+        li:nth-child(3) a:hover{/*Issue*/
+            background-position: -213px -32px; /* x, y 좌표 */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Actor</a></li>
+        <li><a href="#">Movie</a></li>
+        <li><a href="#">Issue</a></li>
+    </ul>
+</body>
+</html>

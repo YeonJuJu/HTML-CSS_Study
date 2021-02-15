@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{/*block*/
+            background-color: rgb(215, 241, 241);
+            width: 300px;
+        }
+        span{/*inline*/
+            background-color: rgb(241, 241, 215);
+            width: 300px;
+            display: block; /*span은 inline 속성이기 때문에 속성을 block으로 바꿔주어야 가로 길이를 지정할 수 있다*/
+        }
+        p{
+            text-align: center;
+        }
+        p a{
+            border: 2px solid rgb(127, 127, 187);
+            background-color: rgb(64, 7, 102);
+            color:white;
+            text-decoration: none;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            line-height: 40px;
+            border-radius: 8px;
+        }
+        .hidden{
+            /* 공간을 차지하지 않음 */
+            display: none;
+        }
+        .hide{
+            /* 공간을 차지함 but 보이지 않음 */
+            visibility: hidden;
+        }
+        div i{
+            display: list-item;
+            background-color: thistle;
+        }
+        .services{
+            display: table;
+            width: 800px;
+            border: 2px solid tomato;
+            padding: 5px;
+        }
+        .services div{
+            display: table-cell;
+            width: 50%;
+            border: 2px solid royalblue;
+        }
+        .overflow{
+            text-align: center;
+            background-color: rgb(230, 198, 171);
+            border: 2px solid rgb(73, 43, 3);
+            height:100px;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+            /* overflow: visible이 기본값*/
+        }
+    </style>
+</head>
+<body>
+    <!--
+        display 속성
+        => block, inline, inline-block, none, list item
+
+        visibility 속성
+        => hidden
+
+    -->
+
+    <h1>Heading-1</h1>
+    <span>span-span</span>
+    <p>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </p>
+
+    <div class = "hidden">숨김 영역</div>
+    <div class = "hide">Heading-2</div>
+
+    <div>
+        <i>list</i>
+        <i>list</i>
+        <i>list</i>
+        <i>list</i>
+    </div>
+
+    <br>
+
+    <div class = "services">
+        <div>mobile</div>
+        <div>web application</div>
+    </div>
+
+    <p class = "overflow">
+        In reprehenderit excepteur labore qui sint aliquip tempor veniam officia consectetur laborum. Consectetur veniam id cupidatat amet. Mollit id sunt anim deserunt eu Lorem exercitation id consectetur. Laborum id excepteur minim sunt.
+    </p>
+</body>
+</html>

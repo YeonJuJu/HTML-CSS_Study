@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 3em; /*xx-large, xx-smaller, em*/
+            font-weight: 700;
+            /*line-decoration, overline*/
+            text-decoration: overline;
+            letter-spacing: 18px; /*글자 하나하나 간격*/
+        }
+        em, address{
+            font-style: normal;
+        }
+        del{
+            /* font-style: italic; */
+            font-style: oblique;
+        }
+        .left{
+            text-align: left;
+            word-spacing: 2em; /*단어 사이 간격*/
+        }
+        .right{
+            text-align: right;
+        }
+        .center{
+            text-align: center;
+            line-height: 50px; /* 줄 간격 */
+        }
+        .justify{
+            text-align: justify;
+        }
+        .line123{
+            text-align: right;
+        }
+        h2{
+            width:300px;
+            border:2px solid orangered;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        글자 간격
+        Letter-spacing : 글자 하나하나 간격
+        word-spacing   : 단어 사이 간격
+        line-height    : 줄 간격
+    -->
+    <div class = "container">
+        <h1>text align</h1>
+        <h2>line height</h2>
+        <del>text align</del>
+
+        <p class = "left"><em>Quis ex consectetur</em> do laboris excepteur nostrud sit. Exercitation labore est labore cillum ea elit mollit aliqua culpa elit sint. Exercitation officia voluptate nisi minim enim nisi.</p>
+        <p class = "right">Quis ex consectetur do laboris excepteur nostrud sit. Exercitation labore est labore cillum ea elit mollit aliqua culpa elit sint. Exercitation officia voluptate nisi minim enim nisi.</p>
+        <p class = "center">Quis ex consectetur do laboris excepteur nostrud sit. Exercitation labore est labore cillum ea elit mollit aliqua culpa elit sint. Exercitation officia voluptate nisi minim enim nisi.</p>
+        <p class = "justify">Quis ex consectetur do laboris excepteur nostrud sit. Exercitation labore est labore cillum ea elit mollit aliqua culpa elit sint. Exercitation officia voluptate nisi minim enim nisi.</p>
+
+        <address>
+            &copy;all right reserved.<br>
+            contact us.
+        </address>
+
+        <p class = "line123">
+            <span>line1</span>
+            <span>line2</span>
+            <span>line3</span>
+        </p>
+    </div>
+</body>
+</html>
