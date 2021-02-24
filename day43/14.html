@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #container{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            display: flex;
+            border: 2px solid black;
+            align-items: center;
+        }
+        #container div{
+            width: 100px;
+            height: 50px;
+            background: #ccc;
+            border: 2px solid;
+        }
+        /*
+            flex : flex-grow    flex-shrink   flex-basis
+                   ㄴ늘리는비율  ㄴ줄이는 비율  ㄴ기본값
+        */
+
+        /* 
+            아무것도 지정하지 않은 box3은 그대로 100 50이고,
+            box2는 두배로 들려 200이 된다
+        */
+        #box1{
+            flex: 1 1 0;
+        }
+        #box2{
+            flex: 2 2 0;
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <div id = "box1"><h2>1</h2></div>
+        <div id = "box2"><h2>2</h2></div>
+        <div id = "box3"><h2>3</h2></div>
+    </div>
+</body>
+</html>

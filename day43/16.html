@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .wrapper{
+            width: 500px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            border: 2px solid black;
+            align-items: center;
+        }
+        .wrapper div{
+            width: 100px;
+            background-color: lightslategray;
+            border: 2px solid;
+        }
+        h1{
+            text-align: center;
+        }
+        div[id ^="box"]{
+            text-align: center;
+            font-weight: bold;
+        }
+        #container1{
+            align-items: flex-start;
+        }
+        #container2{
+            align-items: flex-end;
+        }
+        #container3{
+            align-items: center;
+        }
+        #container4{
+            align-items: baseline;
+        }
+        #container5{
+            align-items: stretch;
+        }
+
+        #container4 #box1{font-size: 14px;}
+        #container4 #box2{font-size: 20px;}
+        #container4 #box3{font-size: 16px;}
+    </style>
+</head>
+<body>
+    <h1>align-items : flex-start</h1>
+    <div id = "container1" class = "wrapper">
+        <div id = "box1"><h2>1</h2></div>
+        <div id = "box2"><h2>2</h2></div>
+        <div id = "box3"><h2>3</h2></div>
+    </div>
+
+    <h1>align-items : flex-end</h1>
+    <div id = "container2" class = "wrapper">
+        <div id = "box1"><h2>1</h2></div>
+        <div id = "box2"><h2>2</h2></div>
+        <div id = "box3"><h2>3</h2></div>
+    </div>
+
+    <h1>align-items : center</h1>
+    <div id = "container3" class = "wrapper">
+        <div id = "box1"><h2>1</h2></div>
+        <div id = "box2"><h2>2</h2></div>
+        <div id = "box3"><h2>3</h2></div>
+    </div>
+
+    <h1>align-items : baseline</h1>
+    <div id = "container4" class = "wrapper">
+        <div id = "box1"><h2>1</h2></div>
+        <div id = "box2"><h2>2</h2></div>
+        <div id = "box3"><h2>3</h2></div>
+    </div>
+
+    <h1>align-items : stretch (기본값)</h1>
+    <div id = "container5" class = "wrapper">
+        <div id = "box1"><h2>1</h2></div>
+        <div id = "box2"><h2>2</h2></div>
+        <div id = "box3"><h2>3</h2></div>
+    </div>
+</body>
+</html>

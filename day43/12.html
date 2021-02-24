@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+        .flex-item-left{
+            background-color: #bfdff1;
+            padding: 10px;
+            flex: 50%;
+        }
+        .flex-item-right{
+            background-color: #cfa6a6;
+            padding: 10px;
+            flex: 50%;
+        }
+
+        @media screen and (max-width:800px){
+            .flex-container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>flex box layout</h1>
+    <p>"flex-direction:row" 플렉스 항목을 왼쪽에서 오른쪽으로 배치</p>
+    <p>"flex-direction:column" 플렉스 항목을 위에서 아래로 배치</p>
+    <p>브라우저 width가 800px 이하일 때 방향 확인하기</p>
+    <hr>
+    <div class = "flex-container">
+        <div class = "flex-item-left">1</div>
+        <div class = "flex-item-right">2</div>
+    </div>
+</body>
+</html>
