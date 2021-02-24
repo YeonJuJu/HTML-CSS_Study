@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        .origin{
+            width:210px;
+            height: 200px;
+            border: 1px solid;
+            margin: 40px;
+            float: left;
+            perspective: 200px;/*perspective(원근감) 사용하지 않으면 rotatey rotatex 느낄 수 없음 숫자가 커질수록 멀리서 보는 느낌*/
+        }
+        .rotatex:hover{
+            transform: rotatex(45deg); /*양수는 시계방향, 음수는 시계반대방향*/
+        }
+        .rotatey:hover{
+            transform: rotatey(45deg);
+        }
+        .rotatez:hover{
+            transform: rotatez(45deg); 
+        }
+        .rotate3d:hover{
+            perspective: 200px;
+            transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+            transform-origin: 50% 50%;
+            backface-visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class = "origin">
+        <div class = "rotatez">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "rotatey">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "rotatez">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "rotate3d">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+</body>
+</html>

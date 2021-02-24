@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        .origin{
+            width:210px;
+            height: 200px;
+            border: 1px solid;
+            margin: 40px;
+            float: left;
+        }
+        .scalex:hover{
+            transform: scaleX(1.2);
+        }
+        .scaley:hover{
+            transform: scaley(1.2);
+        }
+        .scalexy:hover{
+            transform: scale(1.2);
+        }
+        .scale:hover{
+            transform: scale(0.8); /*1을 기준으로 1보다 작으면 객채가 작아짐*/
+        }
+        .rotate1:hover{
+            transform: rotate(20deg); /*양수는 시계방향, 음수는 시계반대방향*/
+        }
+        .rotate2:hover{
+            transform: rotate(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class = "origin">
+        <div class = "scalex">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "scaley">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "scalexy">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "scale">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "rotate1">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+
+    <div class = "origin">
+        <div class = "rotate2">
+            <img src = "img/fruit.jpg" alt = "fruit">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backface-visibility</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        /*
+            backface-visibility 속성
+            ㄴ> visible, hidden
+        */
+        h1{
+            font-size: 40px;
+        }
+        div{
+            width:250px;
+            height: 250px;
+        }
+        .container{
+            border:1px solid black;
+            float: left;
+            margin-top: 200px; 
+            margin-left: 100px;
+            perspective: 300px;
+        }
+        .box{
+            background-color: rgb(75, 113, 128);
+        }
+        .box:hover{
+            transform: rotateY(135deg);
+        }
+        #back1{
+            backface-visibility: hidden;
+        }
+        #back2{
+            backface-visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div id = "back1" class = "box">
+            <h1>BACK_FACE</h1>
+        </div>
+    </div>
+
+    <div class = "container">
+        <div id = "back2" class = "box">
+            <h1>BACK_FACE</h1>
+        </div>
+    </div>
+</body>
+</html>

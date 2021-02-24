@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+         /*
+            transform-origin : 특정 지점을 기준으로 변형함
+            transform-origin : x축 y축 z축 ( 수평 수직 3d )
+                수평 - left, right, center
+                수직 - top, bottom, center
+         */
+        .origin{
+            width: 100px;
+            height: 240px;
+            border: 1px solid;
+            float: left;
+            margin: 80px;
+        }
+        .rose{
+            transform:rotate(10deg);
+        }
+        .left_top .rose:hover{
+            transform-origin: left top;
+        }
+        .right_top .rose:hover{
+            transform-origin: right top;
+        }
+        .left_bottom .rose:hover{
+            transform-origin: left bottom;
+        }
+        .right_bottom .rose:hover{
+            transform-origin: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class = "origin left_top">
+        <img class="rose" src="img/rose.jpg" alt="rose">
+    </div>
+
+    <div class = "origin right_top">
+        <img class="rose" src="img/rose.jpg" alt="rose">
+    </div>
+
+    <div class = "origin left_bottom">
+        <img class="rose" src="img/rose.jpg" alt="rose">
+    </div>
+
+    <div class = "origin right_bottom">
+        <img class="rose" src="img/rose.jpg" alt="rose">
+    </div>
+</body>
+</html>

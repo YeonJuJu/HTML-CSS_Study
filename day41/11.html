@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        .delay_option{
+            position:relative;
+            width: 500px;
+            height: 150px;
+            border: 1px solid #aaa;
+            border-radius: 30px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .delay_option:hover .box{
+            transform: rotate(720deg);
+            margin-left: 420px;
+        }
+        .box{
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            background-color: #eee;
+        }
+        .box p{
+            text-align: center;
+            padding: 10px;
+        }
+        #no_delay{
+            transition-duration: 3s;
+            border: 1px solid pink;
+        }
+        #delay{
+            transition-duration: 3s;
+            transition-delay: 1s;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class = "delay_option">
+        <div id = "no_delay" class = "box"><p>no_delay</p></div>
+        <div id = "delay" class = "box"><p>delay</p></div>
+    </div>
+</body>
+</html>

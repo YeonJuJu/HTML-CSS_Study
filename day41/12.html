@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-timing-function</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 150px;
+            background-color: plum;
+            transition: width 2s;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #transition1:hover{
+            width: 400px;
+            transition-timing-function: linear;
+        }
+        #transition2:hover{
+            width: 400px;
+            transition-timing-function: ease;
+        }
+        #transition3:hover{
+            width: 400px;
+            transition-timing-function: ease-in;
+        }
+        #transition4:hover{
+            width: 400px;
+            transition-timing-function: ease-out;
+        }
+        #transition5:hover{
+            width: 400px;
+            transition-timing-function: ease-in-out;
+        }
+        #transition6:hover{
+            width: 400px;
+            transition-timing-function: cubic-bezier();
+        }
+    </style>
+</head>
+<body>
+    <h1>transition-timing-function</h1>
+    <div id = "transition1">linear</div>
+    <div id = "transition2">ease</div>
+    <div id = "transition3">ease-in</div>
+    <div id = "transition4">ease-out</div>
+    <div id = "transition5">ease-in-out</div>
+    <div id = "transition6">cubic-bezier</div>
+</body>
+</html>
+
+<!--
+    transition-timing-function
+
+    linear : 처음부터 끝까지 같은 속도로 transition 진행
+    ease   : 처음엔 천천히 시작하고 빨라지다가 마지막에는 다시 천천히 진행
+    ease-in: 시작을 느리게 함
+    ease-out: 느리게 끝남
+    ease-in-out: 느리게 시작하고 느리게 끝남
+    cubic-bezier(n, n, n, n) : 베지에 함수를 직접 정의해 사용 n에는 0~1 사이 숫자가 사용됨
+
+-->

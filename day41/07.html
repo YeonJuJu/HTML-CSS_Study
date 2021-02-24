@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 1px solid;
+            margin-top: 100px;
+            margin-left: 100px;
+            float: left;
+            perspective: 300px;
+        }
+        .box{
+            background-color: rgb(100, 147, 165);
+        }
+        .box:hover{
+            background-color: rgb(100, 147, 165);
+            transform: rotateY(45deg);
+        }
+        .sub_box:hover{
+            background-color: rgb(134, 151, 158);
+            transform: rotateX(45deg);
+            transform-origin: left top;
+        }
+        #transform_style1{
+            transform-style: flat;
+        }
+        #transform_style2{
+            transform-style:preserve-3d;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div id = "transform_style1" class = "box">
+            <div class = "sub_box"></div>
+        </div> 
+    </div>
+
+    <div class = "container">
+        <div id = "transform_style2" class = "box">
+            <div class = "sub_box"></div>
+        </div> 
+    </div>
+    
+</body>
+</html>

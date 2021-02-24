@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        .square2circle{
+            width: 300px;
+            height: 300px;
+            background-color: lightgoldenrodyellow;
+            border: 4px solid lightblue;
+            animation-name: change_bgcolor;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        /*animation 정의*/
+        @keyframes change_bgcolor{
+            from{
+                background-color: lightgoldenrodyellow;
+                border: 4px solid lightblue;
+            }
+            to{
+                background-color: lightpink;
+                border: 4px solid lightgoldenrodyellow;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "square2circle"></div>
+</body>
+</html>
