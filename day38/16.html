@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;;
+        }
+        div{
+            width: 250px;
+            height: 100px;
+            background-color: rgba(154, 198, 241, 0.767);
+            border-radius: 10px;
+            display: inline-block;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid dodgerblue;
+            margin-bottom: 20px;
+            margin-right: 10px;
+        }
+        /*
+            box-shadow: inset offset-x offset-y blur spread color
+
+            inset - 안쪽 그림자 keyword
+            offset-x - 바깥쪽 수평그림자 값
+            offset-y- 바깥쪽 수직그림자 값
+            blur - 그림자 가장자리를 부드럽게 처리하는 정도 (기본값 0)
+            spread - 그림자 크기
+            color - 그림자 색깔
+        */
+        .box_shadow1{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .box_shadow2{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.74);
+        }
+        .box_shadow3{
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+        }
+        .box_shadow4{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.17);
+        }
+        .box_shadow5{
+            box-shadow: inset 5px 3px 4px rgba(152, 170, 226, 0.842);
+        }
+        .box_shadow6{
+            box-shadow: inset 0px 0px 20px rgba(152, 170, 226, 0.842);
+        }
+        .box_shadow7{
+            box-shadow: inset 1px 1px 150px rgba(152, 170, 226, 0.842);
+        }
+        .box_shadow8{
+            box-shadow: inset 0px 0px 0px 10px white,  inset 0px 0px 0px 15px black;
+        }
+        .box_shadow9{
+            box-shadow: 5px 5px 0px rgba(152, 170, 226, 0.842), 5px 10px 0px rgba(31, 78, 219, 0.842);
+        }
+    </style>
+</head>
+<body>
+    <div class = "box_shadow1">box_shadow1</div>
+    <div class = "box_shadow2">box_shadow2</div>
+    <div class = "box_shadow3">box_shadow3</div>
+    <div class = "box_shadow4">box_shadow4</div>
+    <div class = "box_shadow5">box_shadow5</div>
+    <div class = "box_shadow6">box_shadow6</div>
+    <div class = "box_shadow7">box_shadow7</div>
+    <div class = "box_shadow8">box_shadow8</div>
+    <div class = "box_shadow9">box_shadow9</div>
+</body>
+</html>

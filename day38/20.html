@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border-bottom: 1px solid lightgray;
+            text-align: center;
+            padding: 3px;
+        }
+        th{
+            background-color: rgb(44, 90, 44);
+            color: white;
+        }
+        tfoot td{
+            background-color: rgb(44, 90, 82);
+            color: white;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: right;
+            font-weight: bold;
+            color: rgb(1, 105, 57);
+            font-size: 13px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+             더조은 패션 가격표
+        </caption>
+
+        <thead>
+            <tr>
+                <th>상품</th>
+                <th>일반가</th>
+                <th>특별가(옵션추가)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>셔츠</td>
+                <td>20,000</td>
+                <td>38,000</td>
+            </tr>
+            <tr>
+                <td>상하의</td>
+                <td>33,000</td>
+                <td>52,000</td>
+            </tr>
+            <tr>
+                <td>하의세트</td>
+                <td>40,000</td>
+                <td>48,000</td>
+            </tr>
+            <tr>
+                <td>대여</td>
+                <td>12,000</td>
+                <td>28,000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">매장전화번호 : 080-335-0020 / 오픈시간 : 9:00 AM ~ 18:00 PM</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

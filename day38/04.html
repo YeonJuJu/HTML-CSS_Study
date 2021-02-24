@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            background-color: beige;
+            /* float: left; */
+            margin-bottom: 50px;
+        }
+        .thumb{
+            float: left;
+        }
+        .content p{
+            word-break: break-all;
+        }
+        .float_clear{
+            clear: both; /* float left, right 해제 -> 이 이후 컨텐츠에 대해 적용 */
+        }
+        img{
+            vertical-align: top;
+        }
+        .float_test{
+            background-color: rgb(136, 173, 241);
+        }
+        .float_test::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .float_test p{
+            border: 2px solid rgb(241, 112, 134);
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        float 속성
+        : html 요소들을 좌우로 배치함 -> left, right
+
+        1) float 가 적용된 요소를 지정한 방향으로 이동시킴
+        2) float 가 적용된 요소의 너비가 해당 요소의 content 의 크기만큼 자동으로 설정됨
+        3) float 가 적용된 요소의 뒷 요소들이 지정한 방향으로 따라옴
+        4) 다시 배치하려면 float 속성을 해지해야 함 -> clear 사용
+            -> child element 에 float 속성이 적용되면 parent element의 height 가 적용되지 않음
+    -->
+    <h1>float 속성</h1>
+    <h2>float 속성 특징</h2>
+    <div class = "content">
+        <img class = "thumb" src = "https://via.placeholder.com/100x100/f5f5dc/808080" alt = "no image">
+        
+        <p> Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum<br class = "float_clear">
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+            Pariatur amet culpa duis ipsum
+        </p>
+    </div>
+
+    <div class = "float_test">
+        <p>
+        <img src = "https://via.placeholder.com/100x100/f5f5dc/808080" alt = "no image">
+        </p>
+        <p>
+        <img src = "https://via.placeholder.com/100x100/f5f5dc/808080" alt = "no image">
+        </p>
+        <p>
+        <img src = "https://via.placeholder.com/100x100/f5f5dc/808080" alt = "no image">
+        </p>
+        <!-- <div class = "clear"></div> -->
+    </div>
+    
+    <hr>
+</body>
+</html>
