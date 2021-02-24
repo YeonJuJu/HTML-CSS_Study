@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* text-overflow 는 긴 문자열을 잘라주는 형태를 지정 */
+        p{
+            width: 200px;
+            border: 1px solid;
+            padding: 2px 5px 5px 2px;
+
+            /* text-overflow 속성 설정할 때 필요한 설정 */
+            white-space: nowrap; overflow: hidden;
+
+            display: inline-block;
+        }
+
+        .overflow-visible{
+            white-space: initial;
+        }
+        
+        .overflow-clip{ /* 기본값으로, 넘치는 부분이 잘림 */
+            text-overflow: clip;
+        }
+
+        .overflow-ellipsis{/* 넘치는 부분이 ...(말줄임표) 로 표시됨 */
+            text-overflow: ellipsis;
+        }
+
+        .overflow-string{/* 지정한 문자열로 표시 : 현재 지원 안 함 */
+            white-space: string;
+        }
+    </style>
+</head>
+<body>
+    <p class = "overflow-visible">
+        Enim ut mollit enim enim proident officia cillum ex voluptate culpa consectetur labore nisi.
+    </p>
+    <p class = "overflow-clip">
+        Enim ut mollit enim enim proident officia cillum ex voluptate culpa consectetur labore nisi.
+    </p>
+    <p class = "overflow-ellipsis">
+        Enim ut mollit enim enim proident officia cillum ex voluptate culpa consectetur labore nisi.
+    </p>
+    <p class = "overflow-string">
+        Enim ut mollit enim enim proident officia cillum ex voluptate culpa consectetur labore nisi.
+    </p>
+</body>
+</html>

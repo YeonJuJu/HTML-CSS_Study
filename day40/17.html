@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li a{
+            color: blueviolet;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 30px;
+        }
+        a[href $= "hwp"]{/*$= 를 사용하면 요소의 마지막이 hwp로 끝나는 요소를 검색*/
+            background: url("img/hwp_icon.gif") no-repeat left center;
+            padding-left: 25px;
+            
+        }
+        a[href $= "xls"]{/*$= 를 사용하면 요소의 마지막이 xls로 끝나는 요소를 검색*/
+            background: url("img/excel_icon.gif") no-repeat left center;
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h3>취업 지원서 다운로드 하기</h3>
+    <ul>
+        <li><a href="#.hwp" alt="" target="_blank">한글 파일</a></li>
+        <li><a href="#.xls" alt="" target="_blank">엑셀 파일</a></li>
+    </ul>
+</body>
+</html>

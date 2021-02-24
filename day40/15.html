@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            margin: 10px;
+        }
+        li a{
+            color: blueviolet;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-size: 14px;
+        }
+        .flat{
+            background: blue;
+            color: white;
+        }
+        [class~="button"]{/* [class="button"] // ~= 은 다음 단어를 포함한다는 뜻 */
+            border: 2px solid;
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+            /* box-shadow : x, y, 번짐, 폭, 색상*/
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" alt="">메뉴1</a></li>
+        <li><a href="#" alt="">메뉴2</a></li>
+        <li><a class="button" href="#" alt="">메뉴3</a></li>
+        <li><a class="flat button" href="#" alt="">메뉴4</a></li>
+    </ul>
+</body>
+</html>

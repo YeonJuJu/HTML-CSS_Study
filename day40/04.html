@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+        h2{
+            font-size: 2em;
+        }
+        h1{
+            font-size: 3.5em;
+        }
+        a:link , a:visited{ /* link : 방문 전, visited : 방문 후*/
+            text-decoration: none;
+            color: #222;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+        #bg{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+            background: url(img/flame.jpg) left, top, no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <video id = "bg" src="media/flame.mp4" autoplay loop muted poster="img/flame.jpg"></video>
+    <div id = "container">
+        <h2>TJOEUN</h2>
+        <h1><a href="http://hg.tjoeun.co.kr/">TJOEUN IT Academy</a></h1>
+    </div>
+</body>
+</html>

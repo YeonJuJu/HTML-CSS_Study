@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 200px;
+            border: 1px solid;
+            padding: 2px;
+            overflow: hidden;
+        }
+        /* 연속된 공백이 공백 하나로 표시됨. 자동 줄바꿈 */
+        .normal{white-space: normal;}
+
+        /* normal과 같지만 자동 줄바꿈이 되지 않음 */
+        .nowrap{white-space: nowrap;}
+
+        /* 연속된 공백을 그대로 표시함. 자동 줄바꿈이 되지 않음 */
+        .pre{white-space: pre;}
+
+        /* 연속된 공백을 그대로 표시함. 자동 줄바꿈 */
+        .pre-wrap{white-space: pre-wrap;}
+
+        /* 연속된 공백이 공백 하나로 표시됨 */
+        .pre-line{white-space: pre-line;}
+    </style>
+</head>
+<body>
+    <p class = "normal">element의          공백문자    처리    를 설 정 함</p>
+    <p class = "nowrap">element의          공백문자    처리    를 설 정 함</p>
+    <p class = "pre">element의          공백문자    처리    를 설 정 함</p>
+    <p class = "pre-wrap">element의          공백문자    처리    를 설 정 함</p>
+    <p class = "pre-line">element의          공백문자    처리    를 설 정 함</p> 
+
+    
+    <!-- /* white-space => 줄바꿈 해주는 속성으로 normal, nowrap, pre, pre-line, pre-wrap이 있다*/ -->
+</body>
+</html>

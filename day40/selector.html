@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header h1{ /*#header 뒤에 있는 후손 h1 (레벨 관계 없이 모든 h1)*/
+            color: red;
+        }
+        #header > h1{ /*#header 바로 뒤에 있는 자손 h1 (레벨 1 차이의 h1)*/
+            color: green;
+        }
+        #section h1{
+            color: blue;
+            font-weight: bold;
+        }
+
+        h1 ~ h2{/*h1 뒤에 있는 모든 h2 지정 (동위)*/
+            color: orangered;
+        }
+
+        h1 + h2{/*h1 바로 뒤에 있는 h2 지정 (동위)*/
+            color:hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div id = "header">
+        <h1 class = "title">First Div Header</h1>
+        <div id = "nav">
+            <h1>Navigation</h1>    
+        </div>
+    </div>
+
+    <div id = "section">
+        <h1 class = "title">Second Div Header</h1>
+        <p>Ad in veniam consectetur ipsum reprehenderit officia aliquip sint.</p>
+    </div>
+
+    <h1>Header - h1</h1>
+    <h2>Header - h2</h2>
+    <h2>Header - h2</h2>
+    <h2>Header - h2</h2>
+    <h2>Header - h2</h2>
+    <h2>Header - h2</h2>
+    <h2>Header - h2</h2>
+</body>
+</html>

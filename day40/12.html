@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-break</title>
+  <style>
+    div{
+      background-color: yellow;
+      width: 200px; margin: 20px;
+    }
+    .break_all {
+      word-break: break-all;
+      /* text-align: justify; */
+    }
+    .keep_all{
+      word-break:keep-all;
+    }
+  </style>
+</head>
+<body>
+  <h2>word-break: normal (default)</h2>
+  <div class="normal">Once when I was six years old I saw a magnificent picture in a book, called True Stories from Nature, about the primeval forest. </div>
+  <div class="normal">임진왜란(壬辰倭亂)은 1592년 5월 23일부터 1598년 12월 16일까지 약 7년간 조선과 명나라 대 왜 사이에서 일어난 전쟁이다.</div>
+
+  <h2>word-break: break-all</h2>
+  <div class="break_all">Once when I was six years old I saw a magnificent picture in a book, called True Stories from Nature, about the primeval forest. </div>
+  <div class="break_all">임진왜란(壬辰倭亂)은 1592년 5월 23일부터 1598년 12월 16일까지 약 7년간 조선과 명나라 대 왜 사이에서 일어난 전쟁이다.</div>
+
+  <h2>word-break: keep-all</h2>
+  <div class="keep_all">Once when I was six years old I saw a magnificent picture in a book, called True Stories from Nature, about the primeval forest. </div>
+  <div class="keep_all">임진왜란(壬辰倭亂)은 1592년 5월 23일부터 1598년 12월 16일까지 약 7년간 조선과 명나라 대 왜 사이에서 일어난 전쟁이다.</div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            margin: 10px;
+        }
+        li a{
+            color: blueviolet;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-size: 14px;
+        }
+        a[title |= "us"]{ /* |=를 사용하면 속성값이 us이거나 us-로 시작하는 요소를 검색*/
+            background:url(img/us.png) no-repeat left;
+            padding: 2px 25px;
+        }
+        a[title |= "chi"]{ /* |=를 사용하면 속성값이 chi이거나 chi-로 시작하는 요소를 검색*/
+            background:url(img/us.png) no-repeat left;
+            padding: 2px 25px;
+        }
+
+        /*============================================================================*/
+
+        a[title^="us"]{/* ^=는 eng로 시작하는 요소 검색*/
+            background:url(img/us.png) no-repeat left;
+            padding: 2px 25px;
+        }
+        a[title^="chi"]{/* ^=는 chi로 시작하는 요소 검색*/
+            background:url(img/ch.png) no-repeat left;
+            padding: 2px 25px;
+        }
+        a[title^="jap"]{/* ^=는 jap로 시작하는 요소 검색*/
+            background:url(img/jp.png) no-repeat left;
+            padding: 2px 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>외국어 서비스 : </li>
+        <li><a href="#" alt="" title="us">English</a></li>
+        <li><a href="#" alt="" title="us-english">English</a></li>
+        <li><a href="#" alt="" title="chinese">Chinese</a></li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <ul>
+        <li>외국어 서비스 : </li>
+        <li><a href="#" alt="" title="us">English</a></li>
+        <li><a href="#" alt="" title="china">Chinese</a></li>
+        <li><a href="#" alt="" title="japan">Japanese</a></li>
+    </ul>
+</body>
+</html>

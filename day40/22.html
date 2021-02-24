@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/prefixfree.min.js"></script>
+    <style>
+        .origin{
+            width: 200px;
+            height: 150px;
+            border: 5px solid black;
+            float: left;
+            margin: 50px;
+        }
+        img{
+            width: 200px;
+            height: 150px;
+        }
+        .movex{
+            transform: translateX(50px);
+        }
+
+        .movey{
+            transform: translateY(20px);
+        }
+
+        .movexy{
+            transform: translate(20px, 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="movex">
+            <img src="https://i.expansys.net/img/b/317915/lego-10258-creator-expert-london-bus-kit.jpg" alt="bus">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movey">
+            <img src="https://i.expansys.net/img/b/317915/lego-10258-creator-expert-london-bus-kit.jpg" alt="bus">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="movexy">
+            <img src="https://i.expansys.net/img/b/317915/lego-10258-creator-expert-london-bus-kit.jpg" alt="bus">
+        </div>
+    </div>
+</body>
+</html>

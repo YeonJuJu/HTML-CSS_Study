@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+        ul li {
+            margin: 15px;
+        }
+        li.hot::after{
+            content: "HOT!!";
+            font-size: x-small;
+            border-radius: 2px;
+            background: red;
+            color: white;            
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1>제품 목록</h1>
+        <ul>
+            <li class = "hot">제품A</li>
+            <li class = "ice">제품B</li>
+            <li class = "ice">제품C</li>
+            <li class = "hot">제품D</li>
+        </ul>
+    </div>
+</body>
+</html>

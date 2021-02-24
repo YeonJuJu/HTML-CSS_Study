@@ -1,0 +1,22 @@
+~ div : 자식중 div만
+공백  : 자식 모두
+>      : 바로 뒤 자식
+
+자손 선택자 >
+후손 선택자 '공백'
+동위 선택자 +, ~
+	  a + b : a 태그 바로 다음에 나오는 b 태그만
+	  a ~ b : a 태그 다음에 나오는 b 태그
+
+https://www.w3c.org/TR/html
+https://www.w3c.org/TR/selectors
+https://www.w3c.org/TR/css3-mediaqueries
+
+https://www.webplatform.org
+https://www.caniuse.com
+
+가상요소 ::
+가상클래스 :
+
+자체에 변화를 주면 :
+태그 자체에 전체 변화면 ::
