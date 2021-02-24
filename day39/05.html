@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            margin: 20px;
+        }
+        #gra_size1{
+            background: rgb(109, 173, 109);
+            background: radial-gradient(circle closest-side at 30% 40%, white, rgb(231, 231, 114), rgb(109, 173, 109));
+        }
+        #gra_size2{
+            background: rgb(109, 173, 109);
+            background: radial-gradient(circle closest-corner at 30% 40%, white, rgb(231, 231, 114), rgb(109, 173, 109));
+        }
+        #gra_size3{
+            background: rgb(109, 173, 109);
+            background: radial-gradient(circle farthest-side at 30% 40%, white, rgb(231, 231, 114), rgb(109, 173, 109));
+        }
+        #gra_size4{
+            background: rgb(109, 173, 109);
+            background: radial-gradient(circle farthest-corner at 30% 40%, white, rgb(231, 231, 114), rgb(109, 173, 109));
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id = "gra_size1"></li>
+        <li id = "gra_size2"></li>
+        <li id = "gra_size3"></li>
+        <li id = "gra_size4"></li>
+    </ul>
+</body>
+</html>
+
+<!--
+    closest-side    : 그라데이션 가장자리가 그라데이션 중심에서 가장 가까운 요소의 모서리와 만남
+    closest-corner  : 그라데이션 가장자리가 그라데이션 중심에서 가장 가까운 요소의 꼭짓점과 만남
+    farthest-side   : 그라데이션 가장자리가 그라데이션 중심에서 가장 먼 모서리와 만남
+    farthest-corner : 그라데이션 가장자리가 그라데이션 중심에서 가장 먼 꼭짓점과 만남
+-->

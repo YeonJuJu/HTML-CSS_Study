@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 300px;
+            margin: 20px;
+        }
+        .gradation1{/* radial-gradient */
+            background-color: red;
+            background: radial-gradient(ellipse, white, yellow, red);
+            /*ellipse : 기본값 -> 박스 모양에 맞는 모양으로 자동 설정 */
+        }
+        .gradation2{/* radial-gradient */
+            background-color: red;
+            background: radial-gradient(circle, white, yellow, red);
+            /*circle : 원형 */
+        }
+        .gradation3{/* radial-gradient */
+            background-color: red;
+            background: radial-gradient(circle at 10% 10%, white, yellow, red);
+            /*circle at : 위치 지정 원형*/
+        }
+    </style>
+</head>
+<body>
+    <div class = "gradation1"></div>
+    <div class = "gradation2"></div>
+    <div class = "gradation3"></div>
+</body>
+</html>

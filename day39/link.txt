@@ -1,0 +1,11 @@
+==== gradient generator ===
+
+httpswww.colorzilla.comgradient-editor
+
+https://mycolor.space/
+
+tinyurl.com
+
+fontawesome CDN : https://www.bootstrapcdn.com
+            
+fontawesome icon : https://fontawesome.com/v4.7.0/icons/
