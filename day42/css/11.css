@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+*{
+    box-sizing:border-box
+}
+
+body{
+    line-height: 1.618em;
+    background: #2c3e50;
+}
+
+.wrapper{
+    max-width: 65rem;
+    width: 100%;
+    margin: 2rem;
+    padding: 5rem;
+    text-align: center;
+    background: white;
+    border: 0.5rem solid #34495e;
+}
+
+hr{
+    border:0;
+    border-bottom: 1px solid #bbb;
+    margin: 3rem 0;
+}
+
+button{
+    font-size: 2em;
+    background: #3498db;
+    color: white;
+    padding: 0.85em 0.75em;
+    border:0.25rem solid #3498db;
+    margin: 1rem;
+    position: relative;
+    z-index: 1; /*버튼의 글씨가 위로 올라옴 -> background 하고 content 사이에 틈이 생김 그 틈으로 들어옴*/
+    overflow: hidden;
+}
+
+button:hover{
+    color: #3498db;
+}
+
+button::before{
+    content: '';
+    background: #ecf0f1;
+    position: absolute;
+    padding: 0.85em 0.75em;
+    z-index: -1;
+}
+
+.slide_from_left::before{
+    left: -100%;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+}
+.slide_from_right::before{
+    left: 100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+}
+.slide_from_top::before{
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+}
+.slide_from_bottom::before{
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+}
+
+button[class ^= "slide"]::before{
+    transition: 0.35s;
+}
+
+button[class ^= "slide"]:hover:before{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* grow */
+
+.grow_box::before{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0); /* scale (x축 크기, y축크기)*/
+
+    transition: 0.5s;
+}
+
+.grow_box:hover:before{
+    transform: scale(1);
+}
+
+.grow_ellipse::before{
+    left: -50%;
+    right: -50%;
+    top: -50%;
+    bottom: -50%;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.35s;
+}   
+
+.grow_ellipse:hover:before{
+    transform: scale(1);
+}
+
+.grow_skew_forward::before{
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    /* transform: skewX(-45deg);
+    transform: scaleX(0.5); */
+    transform: skewX(-45deg) scaleX(0);
+    transition: 0.35s;
+}
+
+.grow_skew_forward:hover::before{
+    transform: skewX(-45deg) scaleX(1);
+}
+
+.grow_skew_backward::before{
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scaleX(0);
+    transition: 0.35s;
+}
+
+.grow_skew_backward:hover::before{
+    transform: skewX(45deg) scaleX(1);
+}
+
+/* spin */
+
+.grow_spin::before{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0) rotate(-180deg);
+    transition: 0.35s;
+}
+
+.grow_spin:hover::before{
+    transform: scaleX(1) rotate(180deg);
+}

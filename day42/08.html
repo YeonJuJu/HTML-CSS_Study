@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Palanquin', sans-serif;
+            line-height: 1.6em;
+            background: #3498db;
+            color: white;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 50rem;
+            margin: 5rem auto;
+            text-align: center;
+        }
+
+        .bouncing{
+            position: relative;
+            width: 4.3rem;
+            margin: 0 auto;
+            height: 12rem;
+            border: 1px solid #fff;
+        }
+
+        .ball{
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            background-color: white;
+            border-radius: 50%;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce{
+            0%{
+                top:0;
+                animation-timing-function: ease-in;
+            }
+            34%{
+                width: 4rem;
+                height: 4rem;
+            }
+            35%{
+                top:8rem;
+                animation-timing-function: ease-out;
+                /* width: 4.3rem;
+                height: 3rem; */
+                transform: scale(1.3, 0.8);
+            }
+            60%{
+                width: 4rem;
+                height: 4rem;
+            }
+            100%{
+                top:0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bouncing">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+
+</html>

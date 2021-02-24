@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            마우스를 올리면 100px 의 div요소의 width 가 300px로 넓어지도록 animation 효과를 지시오
+            시간: 3초
+            다시 원상태로 돌아가지 않도록 하세요
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+        }
+
+        div:hover{
+            animation-name: widewidth;
+            animation-duration: 3s;
+            animation-direction: forwards;
+        }
+
+
+        @keyframes widewidth{
+            from{
+                width: 100px;
+            }
+            to{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
